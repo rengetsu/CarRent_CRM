@@ -1,0 +1,141 @@
+
+
+/*1. Первый способ подключение медиа запросов*/
+<link rel="stylesheet" media="only screen and (max-width: 700px)" href="style.css" />
+
+/*2. Второй способ подключение медиа запросов*/
+/* @import */
+@import url(example.css) (max-width: 700px);
+ 
+/*3. Третий способ подключение медиа запросов*/
+/* @media */
+@media screen and (max-width: 700px) {
+    /* Здесь прописывается CSS-правила */
+}
+
+
+
+/* Медиа-запрос (если вам нужно применить стили при условии, что ширина 
+экрана будет 700px и меньше) */
+@media screen and (max-width: 700px) {
+    p {
+        color: red;
+    }
+}
+
+
+/*Медиа-запрос (если вам нужно применить стили при условии, что ширина 
+экрана будет находиться в диапазоне между 500px и 700px (включительно)*/
+@media screen and (max-width: 700px) and (min-width: 500px) {
+    p {
+        color: red;
+    }
+}
+
+
+/*Медиа-запрос (если вам нужно применить стили при условии, что ширина 
+экрана будет меньше 500px или больше 700px*/
+@media screen and (max-width: 500px), (min-width: 700px) {
+    p {
+        color: red;
+    }
+}
+
+
+/*Медиа-запрос (если вам нужно применить стили при условии, что высота 
+экрана будет равна 600px и меньше*/
+@media screen and (max-height: 600px) {
+    body {
+        background: yellow;
+    }
+}
+
+/*Медиа-запрос (если вам нужно применить стили при условии, что высота 
+самого устройства будет равна 600px и меньше*/
+@media screen and (max-device-height: 600px) {
+    body {
+        background: red;
+    }
+}
+
+
+/*Медиа-запрос (если вам нужно применить стили при условии, что  будет 
+ориентация альбомная
+*/
+@media screen and (orientation: landscape) {
+    menu {
+        float: left;
+    }
+}
+
+/*Медиа-запрос (если вам нужно применить стили при условии, что  будет 
+ориентация портретная
+*/
+@media screen and (orientation: portrait) {
+    menu {
+        float: right;
+    }
+}
+
+
+
+/*<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="(max-width: 780px)" href="max-width768px.css" />
+<link rel="stylesheet" media="(max-width: 460px)" href="max-width460px.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+*/
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

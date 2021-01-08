@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,21 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        /**
-         * Non-production services
-         */
-        if ($this->app->environment() !== 'production') {
-            $this->app->register(\Barryvdh\Debugbar\ServiceProvider::class);
-            $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
-            $this->app->register(\Laravel\Dusk\DuskServiceProvider::class);
-        }
-
-        /**
-         * Production-only services
-         */
-        if ($this->app->environment() === 'production') {
-            $this->app->register(\GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class);
-        }
+        Schema::defaultStringLength(191);
     }
 
     /**
