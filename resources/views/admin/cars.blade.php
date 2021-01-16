@@ -68,6 +68,10 @@
 </head>
 
 <body>
+  <?php
+  $cars = array("1", "2", "3", "4", "5", "6", "7");
+  $cars_sk = 7;
+  ?>
 
     <div id="wrapper">
 
@@ -158,108 +162,36 @@
                     <th>System</th>
                     <th>Photo</th>
                   </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Marcedes-Benz SLK</td>
-                    <td>2016</td>
-                    <td>79.00 $</td>
-                    <td>2 Bags</td>
-                    <td>150 MPG</td>
-                    <td>Airbags</td>
-                    <td>Manual/Auto</td>
-                    <td>AC</td>
-                    <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
-                  </tr>
+
+                  <?php foreach ($cars as $key => $cars_sk): ?>
+
+                    <tr>
+                      <td><?php $key ?></td>
+                      <td>Marcedes-Benz SLK</td>
+                      <td>2016</td>
+                      <td>79.00 $</td>
+                      <td>2 Bags</td>
+                      <td>150 MPG</td>
+                      <td>Airbags</td>
+                      <td>Manual/Auto</td>
+                      <td>AC</td>
+                      <td><img width="50" height="50" src="https://thenewswheel.com/wp-content/uploads/2015/07/2016-SLK-New-630x463.jpg"></td>
+                    </tr>
+
+                  <?php endforeach; ?>
+
                 </thead>
              </table>
           </div>
 
         </div>
 
-
         </div>
-
-
 
     </div>
 
 <script type="text/javascript" src="{{URL::to('assets/js/jquery-2.2.4.min.js')}}"></script>
 <script type="text/javascript" src="{{URL::to('assets/js/bootstrap.min.js')}}"></script>
-
-
-
 
 </body>
 
