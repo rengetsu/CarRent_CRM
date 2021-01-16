@@ -55,6 +55,12 @@
 </head>
 
 <body>
+  <?php $qq = "Dzighan";
+  $msgq = 10;
+  $msg = array("Dzighan", "Sanya");
+  $dates = "2021-01-01";
+  $stss = "Send";
+  ?>
 
     <div id="wrapper">
 
@@ -130,78 +136,18 @@
                     <th>Date</th>
                     <th>Actions</th>
                   </tr>
-                  <tr>
-                    <td>Dzighan</td>
-                    <td>Send</td>
-                    <td>2021-01-01</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-                    <td>Received</td>
-                    <td>2021-01-01</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Oleg Mayami</td>
-                    <td>Send</td>
-                    <td>2021-01-02</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Admin</td>
-                    <td>Received</td>
-                    <td>2021-01-02</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Okey</td>
-                    <td>Send</td>
-                    <td>2021-01-03</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>My prosto</td>
-                    <td>Reiceved</td>
-                    <td>2021-01-03</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Kidaem</td>
-                    <td>Send</td>
-                    <td>2021-01-04</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Snius</td>
-                    <td>Reiceved</td>
-                    <td>2021-01-04</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Casto</td>
-                    <td>Send</td>
-                    <td>2021-01-05</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>ne</td>
-                    <td>Reiceved</td>
-                    <td>2021-01-05</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>ponimaya</td>
-                    <td>Send</td>
-                    <td>2021-01-06</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>vkus...</td>
-                    <td>Received</td>
-                    <td>2021-01-06</td>
-                    <td>No</td>
-                  </tr>
+
+                  <?php foreach ($msg as $key => $msgq): ?>
+
+                    <tr>
+                      <td> {{ $msgq }} </td>
+                      <td> {{ $stss }} </td>
+                      <td> {{ $dates }} </td>
+                      <td>No</td>
+                    </tr>
+
+                  <?php endforeach; ?>
+
                 </thead>
              </table>
           </div>

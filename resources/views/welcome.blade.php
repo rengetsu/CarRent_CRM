@@ -93,8 +93,8 @@
             <div class="container padd-lr0">
                 <div class="col-lg-6 col-lg-push-6 ">
                     <header class="wheel-header marg-lg-b100 marg-lg-t200  marg-md-b0 marg-md-t0">
-                        <h1>We Are Wheel  </h1>
-                        <h2>Rent luxurious Cars</h2>
+                        <h1>Car Rent CRM  </h1>
+                        <h2>CRM For Car Rent</h2>
                     </header>
                 </div>
 
@@ -121,8 +121,8 @@
                             <div class="wheel-service-logo">
                                 <img src="images/ico1.png" alt="">
                             </div>
-                            <h5>Most Affordable</h5>
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+                            <h5>24/7</h5>
+                            <p>TWe work for you every day, at any time, without interruption! </p>
                         </div>
                     </div>
                     <div class="col-md-4 padd-lr0 padd-md-lr15">
@@ -130,8 +130,8 @@
                             <div class="wheel-service-logo">
                                 <img src="images/ico2.png" alt="">
                             </div>
-                            <h5>Best Rated</h5>
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+                            <h5>Best Cars</h5>
+                            <p>Only best cars in your city! Rent now, very fast and withnout any problems! </p>
                         </div>
                     </div>
                     <div class="col-md-4 padd-l0 padd-md-lr15">
@@ -139,8 +139,8 @@
                             <div class="wheel-service-logo">
                                 <img src="images/ico3.png" alt="">
                             </div>
-                            <h5>Excellent Service</h5>
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
+                            <h5>Best Prices</h5>
+                            <p>Only best prices in our city! The best cars at the best prices that change every day!  </p>
                         </div>
                     </div>
                 </div>

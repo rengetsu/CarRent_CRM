@@ -74,7 +74,7 @@ Route::group(['prefix'=> 'admin'], function(){
 		'uses'=> 'AdminController@admin_logout'
 	]);
 
-	Route::get('/cars', [
+	Route::get('/cars',[
 		'as'=> 'admin_cars',
 		'uses'=> 'AdminController@admin_cars'
 	]);

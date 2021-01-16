@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 class AdminController extends Controller
 {
-    
+  public $table = "cars";
+
     public function admin_home(){
     	return view('admin.home');
     }

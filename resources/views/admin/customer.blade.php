@@ -55,6 +55,10 @@
 </head>
 
 <body>
+  <?php
+  $customer = "Alex";
+  $cstmr = 2;
+  ?>
 
     <div id="wrapper">
 
@@ -132,13 +136,8 @@
                     <th>Registered Date</th>
                     <th>Actions</th>
                   </tr>
-                  <tr>
-                    <td>Alex Alex</td>
-                    <td>alex.alex@gmail.com</td>
-                    <td>Alex</td>
-                    <td>2021-01-06</td>
-                    <td>No</td>
-                  </tr>
+
+
                 </thead>
              </table>
 
